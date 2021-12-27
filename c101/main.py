@@ -13,7 +13,7 @@ class TransferData:
         dbx.files_upload(f.read(), file_to)
 
 def main():
-    access_token = 'FPH_Kjx-5ZsAAAAAAAAAAd9hIfXfsNhCy8KvwcWbhkmpYSFfXEg6MG3rh4K4ZdGM'
+    access_token = '00000000000000'
     transferData = TransferData(access_token)
 
     file_from = input('Enter the file path to upload: ')
