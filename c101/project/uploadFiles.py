@@ -17,7 +17,8 @@ transferData = TransferData(access_token)
 
 file_from = input('Enter the file path to upload: ')
 file_to = input('Enter the full path to upload to dropbox: ')
-relative_path = os.relpath()
+local_path = os.path.join(os.getcwd(), file_from)
+relative_path = os.path.relpath()
 
 # API v2
 transferData.upload_file(file_from, file_to)
